@@ -31,6 +31,6 @@ jobs:
         env:
           COOKIE: ${{ secrets.COOKIE76765 }}
           USER: ${{ secrets.USER76765 }}
-          PASS: ${{ secrets.PASS76765 }}
-          TO: ${{ secrets.76765 }}
+          PASS: ${{ secrets.PASS }}
+          TO: ${{ secrets.TO }}
         run: npm ci && node index.js "${COOKIE}" "${USER}" "${PASS}" "${TO}"
