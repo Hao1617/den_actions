@@ -41,7 +41,7 @@ const drawFn = async () => {
   if (draw.err_no !== 0) return Promise.reject('已经签到！免费抽奖异常！');
   console.log(JSON.stringify(draw, null, 2));
   if (draw.data.lottery_type === 1) {
-    let num = draw.data.lottery_name.substr(0,draw.data.lottery_name.length-2) * 1;
+    let num = draw.data.lottery_name.substr(0, draw.data.lottery_name.length - 2) * 1;
     score += num;
   }
   return Promise.resolve(`签到成功！恭喜抽到：${draw.data.lottery_name}`);
